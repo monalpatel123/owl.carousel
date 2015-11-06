@@ -379,7 +379,10 @@
             }
             .gallery-caption-container {
             padding: 0 10px 0 10px;
-            width: calc(100% - 340px);
+      
+        }
+        #gallery-slider-sync2{
+           width: calc(100% - 340px);
         }
         }
 
@@ -412,6 +415,9 @@
             font-size: 24px;
         }
 
+        #gallery-slider-sync2{
+           width: 100%;
+        }
          }
          @media (max-width:450px) {
          .owl-page {
@@ -599,7 +605,6 @@
         pagination:false,
         afterAction : syncPosition,
         responsiveRefreshRate : 200,
-        //transitionStyle : "fade",
         lazyLoad:true,
         afterInit : function(el){
           var that = this;
